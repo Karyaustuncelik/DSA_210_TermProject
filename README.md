@@ -1,41 +1,71 @@
-# DSA_210_TermProject 
+# My Personal Weight Loss Journey & Analysis
 
-Weight Loss Project
+## Why I Started This Project
 
-Motivation:
+Over the last six months, I've gained about 15kg, and honestly, it's been frustrating. I'm determined to lose this weight, but I wanted to be smart about it. I figured that since so many people struggle with weight loss, I could turn my personal journey into something that might help others too.
 
-This project was initiated due to my personal experience with weight gain over the past six months. I gained 15 kilograms, and I am now committed to shedding this excess weight. However, I am not alone in this journey many people are striving to lose weight, improve their health, and feel more confident. I believe that this project will not only support my weight loss goals but also provide valuable insights for others on a similar path.By systematically tracking my daily calorie intake, the types of foods I consume, and my gym attendance, I aim to analyze what works best for sustainable weight loss. My hypothesis is that with consistent data collection and analysis, I can find a balanced approach that allows for effective weight loss without the need for overly strict diets.Additionally, obesity is one of the most significant health challenges today. If my approach proves successful, this project could offer practical guidance to others facing similar challenges. Ultimately, my goal is to contribute to a healthier lifestyle for myself and potentially inspire and assist others in their weight loss journeys.
+Rather than jumping on some crazy diet trend, I decided to take a data-driven approach. By tracking what I eat, how much I exercise, and how my weight changes, I'm hoping to figure out what actually works for me. My gut feeling is that if I collect enough data, I'll discover a balanced approach that lets me lose weight without feeling like I'm constantly depriving myself.
 
-Data source: 
+Obesity is such a huge problem these days, and if what I learn helps even one other person, I'll consider this project a success. At the end of the day, I just want to get healthier and maybe help others do the same.
 
-I plan to collect data primarily from my own daily habits and activities. The data collection process will include detailed tracking of:
-Daily Caloric Intake: Including the total calories consumed and the breakdown of macronutrients such as protein, fat, and carbohydrates.
-Exercise and Activity Levels: Recording the number of minutes spent at the gym and an estimate of the calories burned during these activities.
-Weight Tracking: Monitoring my weight daily to observe short-term fluctuations and long-term progress.
-Progress Monitoring: Calculating the cumulative weight loss over time to evaluate the effectiveness of different dietary and exercise approaches.
-Additional Factors: Optionally, I may also track my daily water intake (in liters) to evaluate if it influences weight loss outcomes.
-By maintaining this detailed log, I aim to create a comprehensive dataset that will allow for in-depth analysis of the relationship between diet, exercise, and weight loss. The data will be recorded consistently over a set period to ensure the accuracy and reliability of the analysis.
+## What I'm Tracking
 
-Data analysis: 
+I'm keeping track of:
+- Everything I eat and the calories (plus protein, fat, and carbs)
+- How long I spend at the gym and roughly how many calories I burn
+- My weight each morning
+- How much weight I've lost (or gained) over time
 
-In this project, I will use a variety of data analysis techniques to draw meaningful insights from the collected data:
-1-Data Collection:
-Daily logging of caloric intake, macronutrient breakdown (protein, fat, carbohydrates), gym activities, weight changes, and water intake.
-Cleaning and organizing the data in a structured format using Python's pandas library.
-2-Exploratory Data Analysis:
-Analyzing data distributions, and visualizing changes in weight relative to diet and exercise.
-Using matplotlib and seaborn for data visualization to highlight patterns.
-3-Statistical Analysis:
-Correlation analysis to see the relationship between caloric intake, exercise frequency, and weight loss.
-Evaluating the impact of specific macronutrients on weight changes.
+I'm trying to be really consistent with logging all this info so I can trust the data when I analyze it later.
 
-Findings:
+## How I'm Analyzing the Data
 
-Whether maintaining a caloric deficit consistently leads to weight loss.
-Determining if a higher protein intake correlates with better weight management.
-Evaluating if higher water intake supports weight loss by potentially reducing hunger or increasing metabolism.
-Analyzing whether occasional treats affect the overall progress or if a strict diet is more effective.
+I'm using Python (pandas, matplotlib, and seaborn) to organize and visualize everything. Once I have enough data, I plan to:
+1. Look for patterns in how my eating and exercise habits affect my weight
+2. Run some basic statistical tests to see if certain approaches actually make a difference
+3. Try to build a simple model that might predict my weight changes
 
-Limitations and Future Work:
+## Questions I'm Trying to Answer
 
-One of the main limitations of this project is the small sample size, as the primary data source is based on my own habits. This limited scope may affect the generalizability of the results, making it difficult to apply the findings to a broader population. Additionally, since the data is self-reported, there is potential for inaccuracies in manually logging food intake and exercise routines. The project timeline may also impose a limitation, as a short data collection period might not be sufficient to observe significant trends and long-term effects.To overcome these limitations and improve the project's impact, future work could focus on expanding the dataset by including data from other individuals, which would enhance the reliability and applicability of the findings. Integrating external data sources, such as publicly available health and fitness datasets, could also help validate the results and provide a more comprehensive analysis. Moreover, automating data collection through wearable devices or fitness apps would not only improve data accuracy but also allow for more detailed and consistent tracking of calories, exercise, and weight changes. By addressing these limitations and exploring these future opportunities, this project has the potential to evolve into a valuable tool for effective weight management and promoting a healthier lifestyle.
+I've got a few specific things I'm curious about:
+
+1. Does creating a bigger calorie deficit (eating at least 500 calories below what I burn) actually result in more weight loss?
+
+2. Does eating lots of protein (more than 1.6g per kg of body weight) help me lose weight faster?
+
+3. Do I lose more weight on days when I go to the gym compared to days when I don't?
+
+4. Does eating fewer carbs (less than 40% of my total calories) speed up weight loss?
+
+## What I've Found So Far
+
+- Being in a calorie deficit consistently seems to be the most important factor
+- Eating more protein definitely helps me feel fuller and seems to help with weight management
+- Having the occasional treat doesn't seem to ruin my progress as long as I'm consistent overall
+- Surprisingly, just going to the gym doesn't automatically translate to weight loss (though it has other benefits)
+
+## My Machine Learning Approach
+
+I'm trying to predict next week's weight change based on my habits. I'm looking at:
+- Daily calories
+- Protein, fat, and carb intake
+- Time spent at the gym
+- Averages over the past 3 and 7 days
+
+I'm comparing a few different models:
+1. Linear Regression (simple but might work)
+2. Random Forest (better for capturing complex patterns)
+3. Support Vector Regression (good for smaller datasets)
+
+I'm splitting my data into training and testing sets to make sure the model works on new data.
+
+## Limitations & Future Plans
+
+The biggest limitation is obviously that this is just data from one person (me!), so what works for me might not work for everyone. Also, I might mess up on tracking sometimes, and I haven't been collecting data for very long yet.
+
+In the future, I'd love to:
+- Get more people involved to see patterns across different body types
+- Use data from fitness trackers to get more accurate information
+- Automate more of the data collection to make it easier to maintain
+
+If this project helps me successfully lose weight and keep it off, I might turn it into something bigger that could help more people develop healthier lifestyles.
