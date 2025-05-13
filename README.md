@@ -58,15 +58,15 @@ The model gives me an idea of how much today’s choices could influence the sca
 What I Still Want to Work On
 
 There are a few limitations to this project:
-- It’s just based on me — one person, one set of habits
+- It’s just based on just me, one set of habits
 - Sometimes I forget to log things or estimate meals
 - The dataset isn’t huge, so more advanced models won’t work well yet
 
 That said, I’d love to:
-- Add more people’s data one day (maybe turn this into a shared tool?)
+- Add more people’s data one day 
 - Use a fitness tracker to automate some of the data collection
-- Keep doing this long-term to see trends over time
+- Keep doing this long term to see trends over time
 
-Final Thoughts
+To sum up:
 
-This started out as a way to understand my own habits — but now it feels like a personal experiment in building healthy routines through data. If it ends up helping someone else too, then even better.
+This started out as a way to understand my own losing calories' habits and now it feels like a personal experiment in building healthy routines. If it ends up helping someone else too, then even better, even it is my main aim.
