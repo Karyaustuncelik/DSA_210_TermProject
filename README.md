@@ -1,4 +1,4 @@
-My Personal Weight Loss Journey 
+My Personal Weight Loss Journey – A Data-Driven Approach
 
 Why I Decided to Do This
 
@@ -12,7 +12,7 @@ To keep everything measurable, I’ve been logging:
 - My daily calorie intake, including protein, carbs, and fat
 - How much time I spend exercising (mainly gym and walking)
 - My weight every morning
-- And recently, also things like sleep hours, water intake, step count, and total minutes of movement or activity
+- And recently, also things like sleep hours,water intake, step count, and total minutes of movement or activity
 
 The more consistent I am with tracking, the more accurate the insights I can get — so I try not to skip days.
 
@@ -63,12 +63,10 @@ There are a few limitations to this project:
 - The dataset isn’t huge, so more advanced models won’t work well yet
 
 That said, I’d love to:
-- Add more people’s data one day 
+- Add more people’s data one day (maybe turn this into a shared tool?)
 - Use a fitness tracker to automate some of the data collection
 - Keep doing this long-term to see trends over time
 
-
-
 Final Thoughts
 
-This started out as a way to understand my own habits but now it feels like a personal experiment in building healthy routines through data. If it ends up helping someone else too, then even better.
+This started out as a way to understand my own habits — but now it feels like a personal experiment in building healthy routines through data. If it ends up helping someone else too, then even better.
