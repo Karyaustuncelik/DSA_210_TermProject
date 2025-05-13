@@ -1,71 +1,74 @@
-# My Personal Weight Loss Journey & Analysis
+# 📊 My Personal Weight Loss Journey – A Data-Driven Approach
 
-## Why I Started This Project
+## Why I Decided to Do This
 
-Over the last six months, I've gained about 15kg, and honestly, it's been frustrating. I'm determined to lose this weight, but I wanted to be smart about it. I figured that since so many people struggle with weight loss, I could turn my personal journey into something that might help others too.
+Over the past few months, I noticed I had gained around 15 kilograms, and honestly, it started to affect how I felt both physically and mentally. Rather than jumping into a random diet or blindly cutting calories, I wanted to actually understand what works for me — not just what works in general.
 
-Rather than jumping on some crazy diet trend, I decided to take a data-driven approach. By tracking what I eat, how much I exercise, and how my weight changes, I'm hoping to figure out what actually works for me. My gut feeling is that if I collect enough data, I'll discover a balanced approach that lets me lose weight without feeling like I'm constantly depriving myself.
+I also thought: “If I’m going through this, maybe others are too.” That’s when I decided to turn this into a small data science project. By tracking my daily habits and weight changes, I figured I could not only help myself but maybe even someone else who's struggling with the same thing.
 
-Obesity is such a huge problem these days, and if what I learn helps even one other person, I'll consider this project a success. At the end of the day, I just want to get healthier and maybe help others do the same.
+## What I've Been Tracking
 
-## What I'm Tracking
+To keep everything measurable, I’ve been logging:
+- My daily calorie intake, including protein, carbs, and fat
+- How much time I spend exercising (mainly gym and walking)
+- My weight every morning
+- And recently, also things like **sleep hours**, **water intake**, **step count**, and **total minutes of movement or activity**
 
-I'm keeping track of:
-- Everything I eat and the calories (plus protein, fat, and carbs)
-- How long I spend at the gym and roughly how many calories I burn
-- My weight each morning
-- How much weight I've lost (or gained) over time
+The more consistent I am with tracking, the more accurate the insights I can get — so I try not to skip days.
 
-I'm trying to be really consistent with logging all this info so I can trust the data when I analyze it later.
+## How I Looked Into the Data
 
-## How I'm Analyzing the Data
+Using Python and tools like `pandas`, `matplotlib`, and `seaborn`, I explored the patterns in my daily habits. I didn’t want to just guess what worked — I wanted to visualize it.
 
-I'm using Python (pandas, matplotlib, and seaborn) to organize and visualize everything. Once I have enough data, I plan to:
-1. Look for patterns in how my eating and exercise habits affect my weight
-2. Run some basic statistical tests to see if certain approaches actually make a difference
-3. Try to build a simple model that might predict my weight changes
+Here’s what I included in my analysis:
+- Basic descriptive statistics
+- Correlation heatmaps to see what variables are connected
+- Pairplots to spot trends
+- Line charts to track weight change over time
+- Boxplots and histograms to understand the spread of my nutrition and activity data
 
-## Questions I'm Trying to Answer
+## Questions I Wanted to Answer
 
-I've got a few specific things I'm curious about:
+There were a few things I was especially curious about:
 
-1. Does creating a bigger calorie deficit (eating at least 500 calories below what I burn) actually result in more weight loss?
+1. Does eating at a 500+ calorie deficit really lead to faster weight loss?
+2. Is eating high amounts of protein (1.6g/kg or more) actually helpful?
+3. Does going to the gym regularly actually show up in the scale numbers?
+4. What happens when I reduce carbs — does it affect my progress?
 
-2. Does eating lots of protein (more than 1.6g per kg of body weight) help me lose weight faster?
+## What I Found Out So Far
 
-3. Do I lose more weight on days when I go to the gym compared to days when I don't?
+- Being in a consistent calorie deficit seems to matter the most.
+- Protein does help — I feel fuller, and my weight seems more stable when I focus on it.
+- Gym workouts are great for my mood and energy, but they don’t always lead to instant weight loss (which is totally fine).
+- I can still enjoy food I love occasionally — the key is being consistent overall.
 
-4. Does eating fewer carbs (less than 40% of my total calories) speed up weight loss?
+## Machine Learning: Can I Predict My Weight?
 
-## What I've Found So Far
+Just for fun (and curiosity), I wanted to see if I could predict **tomorrow’s weight** based on today’s habits.
 
-- Being in a calorie deficit consistently seems to be the most important factor
-- Eating more protein definitely helps me feel fuller and seems to help with weight management
-- Having the occasional treat doesn't seem to ruin my progress as long as I'm consistent overall
-- Surprisingly, just going to the gym doesn't automatically translate to weight loss (though it has other benefits)
+So I built a **simple Linear Regression model** that uses:
+- Daily calories, protein, fat, and carbs
+- How much I slept
+- Water I drank
+- Step count and exercise time
 
-## My Machine Learning Approach
+The model gives me an idea of how much today’s choices could influence the scale the next day. I evaluated it using metrics like **Mean Squared Error** and **R² Score**, just to see how well it works (spoiler: it’s not perfect, but it’s interesting!).
 
-I'm trying to predict next week's weight change based on my habits. I'm looking at:
-- Daily calories
-- Protein, fat, and carb intake
-- Time spent at the gym
-- Averages over the past 3 and 7 days
+## What I Still Want to Work On
 
-I'm comparing a few different models:
-1. Linear Regression (simple but might work)
-2. Random Forest (better for capturing complex patterns)
-3. Support Vector Regression (good for smaller datasets)
+There are a few limitations to this project:
+- It’s just based on me — one person, one set of habits
+- Sometimes I forget to log things or estimate meals
+- The dataset isn’t huge, so more advanced models won’t work well yet
 
-I'm splitting my data into training and testing sets to make sure the model works on new data.
+That said, I’d love to:
+- Add more people’s data one day (maybe turn this into a shared tool?)
+- Use a fitness tracker to automate some of the data collection
+- Keep doing this long-term to see trends over time
 
-## Limitations & Future Plans
+---
 
-The biggest limitation is obviously that this is just data from one person (me!), so what works for me might not work for everyone. Also, I might mess up on tracking sometimes, and I haven't been collecting data for very long yet.
+### Final Thoughts
 
-In the future, I'd love to:
-- Get more people involved to see patterns across different body types
-- Use data from fitness trackers to get more accurate information
-- Automate more of the data collection to make it easier to maintain
-
-If this project helps me successfully lose weight and keep it off, I might turn it into something bigger that could help more people develop healthier lifestyles.
+This started out as a way to understand my own habits — but now it feels like a personal experiment in building healthy routines through data. If it ends up helping someone else too, then even better.
