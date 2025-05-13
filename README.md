@@ -18,7 +18,7 @@ The more consistent I am with tracking, the more accurate the insights I can get
 
 How I Looked Into the Data
 
-Using Python and tools like `pandas`, `matplotlib`, and `seaborn`, I explored the patterns in my daily habits. I didn’t want to just guess what worked — I wanted to visualize it.
+Using Python and tools like pandas, matplotlib, and seaborn, I explored the patterns in my daily habits. I didn’t want to just guess what worked — I wanted to visualize it.
 
 Here’s what I included in my analysis:
 - Basic descriptive statistics
